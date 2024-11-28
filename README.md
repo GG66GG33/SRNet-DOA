@@ -14,5 +14,15 @@ The repository is organized as follows:
 - **Real_Scenario_Test**: Contains data, code, and results for real-world scenario testing.
 
 ## Experimental results
-![imag](https://github.com/GG66GG33/DOA1/tree/main/Real_Scenario_Test/Practical_scenary.png)
+## Experimental results
+<div style="display: flex; justify-content: space-around; align-items: center;">
+    <img src="/Real_Scenario_Test/Practical_scenary.png" alt="Practical Scenery" width="380px">
+    <figcaption>Practical Scenery</figcaption>
+    <img src="/Real_Scenario_Test/Spectrum.png" alt="Spectrum" width="400px">
+    <figcaption>Spectrum</figcaption>
+</div>
+
+
+
+
 
