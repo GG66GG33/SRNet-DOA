@@ -13,8 +13,7 @@ The repository is organized as follows:
 - **Matlab_plot**: Contains scripts for plotting the test results.
 - **Real_Scenario_Test**: Contains data, code, and results for real-world scenario testing.
 
-## Experimental results
-## Experimental results
+## Real-world environment testing results
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <img src="/Real_Scenario_Test/Practical_scenary.png" alt="Practical Scenery" width="380px">
     <figcaption>Practical Scenery</figcaption>
