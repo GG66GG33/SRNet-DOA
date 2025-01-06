@@ -88,7 +88,7 @@ if print_DOA:
 # PM
 DOA_pred_PM, Spectrum_PM = md.PM(X, D)
 if print_DOA:
-    print("\nPM 的估计值为:", DOA_pred_PM)
+    print("\nPM:", DOA_pred_PM)
 
 
 angle_min = -90
