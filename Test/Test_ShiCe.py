@@ -28,7 +28,7 @@ md = Methods_DOA(N, D, Angle_interval)
 
 results = {}
 
-file_path = '/media/data/wtg/Pycharm_code/ULA_DOA/Matlab_code/2024090暗室实测/data_analys/09_06_2024_17_09_43_aoadata.h5'
+file_path = '/media/data/wtg/Pycharm_code/ULA_DOA/Matlab_code/data_room/data_analys/09_06_2024_17_09_43_aoadata.h5'
 with h5py.File(file_path, 'r') as h5_file:
     X_real = h5_file['/X_real'][:]
     X_imag = h5_file['/X_imag'][:]
@@ -88,7 +88,7 @@ if print_DOA:
 # PM
 DOA_pred_PM, Spectrum_PM = md.PM(X, D)
 if print_DOA:
-    print("\nPM 的估计值为:", DOA_pred_PM)
+    print("\nPM:", DOA_pred_PM)
 
 
 angle_min = -90
