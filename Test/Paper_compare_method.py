@@ -266,9 +266,9 @@ class Methods_DOA(object):
         G = R[:, :D]
         H = R[:, D:]
         G_H = G.conj().T
-        P = np.linalg.inv(G_H @ G) @ G_H @ H    # 传播算子矩阵
+        P = np.linalg.inv(G_H @ G) @ G_H @ H    
         P_H = P.conj().T
-        Q = np.hstack([P_H, -np.diag(np.ones(self.N-D))])    # Q矩阵
+        Q = np.hstack([P_H, -np.diag(np.ones(self.N-D))])   
         Spectrum = self.Q_spectrum_calculation(Q)
         DOA_pred, _ = scipy.signal.find_peaks(Spectrum)
         DOA_pred = list(DOA_pred)
