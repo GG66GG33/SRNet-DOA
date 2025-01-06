@@ -53,10 +53,10 @@ for phi_fad in phi_fad_range:
     for i in range(computer_num):
         System_model = Samples(N=N, D=D, DOA=DOA, Snap=Snap)
         X, signal, A, noise = System_model.samples_creation(mode=mode, SNR=SNR, amp_fad=amp_fad, phi_fad=phi_fad)
-        X = torch.tensor(X, dtype=torch.complex64)  # 接收信号
+        X = torch.tensor(X, dtype=torch.complex64)  
         X_H = torch.conj(X).t()
         R = torch.matmul(X, X_H) / Snap
-        R = torch.tensor(R, dtype=torch.complex64)  # R
+        R = torch.tensor(R, dtype=torch.complex64)  
 
         X = X / torch.max(torch.abs(X))
         R = R / torch.max(torch.abs(R))
