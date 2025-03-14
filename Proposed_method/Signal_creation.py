@@ -2,7 +2,7 @@ import numpy as np
 
 from System_model import *
 
-def create_DOA_with_gap(D, gap, Array_form='ULA'):    # 生成D个间隔大于gap的DOA角度
+def create_DOA_with_gap(D, gap, Array_form='ULA'):    
     if gap == None:
         if Array_form == 'ULA':
             DOA = np.random.randint(-90, 90, size=D)
@@ -13,7 +13,6 @@ class Samples(System_model):
     def __init__(self, N: int,
                  D: int,
                  DOA: list,
-                 # DOA,
                  Snap: int,
                  gap: int,
                  Array_form = 'ULA'):
