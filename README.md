@@ -1,7 +1,5 @@
 # DOA Estimation of Coherent Sources Using Residual Network-based Subspace Reconstruction
 
-(The paper has been submitted to ICASSP 2025, and the code will be uploaded soon.)
-
 ## Directory description
 
 The repository is organized as follows:
