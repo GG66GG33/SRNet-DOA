@@ -80,11 +80,11 @@ class Proposed_model(nn.Module):
         self.block1_4 = BottleNeck_real(in_channels=256, out_channels_mid=512, out_channels=512)
 
         if D == 1:
-            self.cov2 = nn.Conv2d(in_channels=512, out_channels=512, kernel_size=(3, 2), stride=1, padding=(1, 0), bias=False)  # (8,7)
+            self.cov2 = nn.Conv2d(in_channels=512, out_channels=512, kernel_size=(3, 2), stride=1, padding=(1, 0), bias=False) 
         elif D == 2:
-            self.cov2 = nn.Conv2d(in_channels=512, out_channels=512, kernel_size=(3, 3), stride=1, padding=(1, 0), bias=False)  # (8,6)
+            self.cov2 = nn.Conv2d(in_channels=512, out_channels=512, kernel_size=(3, 3), stride=1, padding=(1, 0), bias=False)
         elif D == 3:
-            self.cov2 = nn.Conv2d(in_channels=512, out_channels=512, kernel_size=(3, 4), stride=1, padding=(1, 0), bias=False)    # (8,5)
+            self.cov2 = nn.Conv2d(in_channels=512, out_channels=512, kernel_size=(3, 4), stride=1, padding=(1, 0), bias=False) 
 
         self.cov3 = conv1x1_real(in_channels=512, out_channels=2)
         self.tanh = nn.Tanh()
