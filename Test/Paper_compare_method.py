@@ -76,7 +76,7 @@ class Methods_DOA(object):
         Un_train_save = Un_train.squeeze()
         Un_pred = torch.complex(Un_train_save[0], Un_train_save[1])
         Un_pred = Un_pred.cpu().detach().numpy()
-        Un_pred = Un_pred.astype(np.complex64)    # 网络预测的Un
+        Un_pred = Un_pred.astype(np.complex64)   
 
         Spectrum = self.spectrum_calculation(Un_pred)
         DOA_pred, _ = scipy.signal.find_peaks(Spectrum)
